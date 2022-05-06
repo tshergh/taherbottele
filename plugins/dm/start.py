@@ -91,7 +91,6 @@ exploreBotEdit = """بعض الميزات الرئيسية هي:
 ◍ `تحويل ملف html الى pdf`
 ◍ `تحويل الرابط URL web الى pdf`
 ◍ `تحويل النص الى pdf`
-◍ `تحويل النص الى خط يد`
 
 مطور البوت: @ta_ja199
 قناة البوت channel Bot :@i2pdfbotchannel
@@ -120,7 +119,6 @@ Modify the pdf file:
 ◍ `Convert html file to pdf`
 ◍ `Convert web URL to pdf`
 ◍ `Convert text to pdf`
-◍ `Convert text to handwriting`
 
 Bot Developer: @ta_ja199
 Bot channel: @i2pdfbotchannel
