@@ -8,3 +8,4 @@ PDFNetPython3==8.1.0
 pyromod==1.5
 fpdf==1.7.2
 ocrmypdf==13.4.0
+requests
