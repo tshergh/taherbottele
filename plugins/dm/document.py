@@ -137,7 +137,7 @@ pdfReply=InlineKeyboardMarkup(
                 InlineKeyboardButton("✏️ إعادة تسمية |RENAME ✏️", callback_data="rename")
             ],[
                 InlineKeyboardButton("📝 مسح ضوئي | OCR 📝", callback_data="ocr"),
-                InlineKeyboardButton("🥷A4 FORMAT | تنسيق 🥷", callback_data="format")
+                InlineKeyboardButton("🥷A4 FORMAT|تنسيق🥷", callback_data="format")
             ],[
                 InlineKeyboardButton("🤐 ZIP 🤐", callback_data="zip"),
                 InlineKeyboardButton("🎯 TAR 🎯", callback_data="tar")
@@ -251,7 +251,7 @@ async def documents(bot, message):
         elif fileExt.lower() == ".pdf":
             try:
                 pdfMsgId = await message.reply_text(
-                    "المعالجة (Processing)..🚶 (Processing)..🚶", quote=True
+                    "المعالجة (Processing)..⏳", quote=True
                 )
                 await asyncio.sleep(0.5)
                 await pdfMsgId.edit(
@@ -359,7 +359,7 @@ async def documents(bot, message):
                         file_name=f"{fileNm}.pdf",
                         document=open(f"{message.message_id}/{fileNm}.pdf", "rb"),
                         thumb=PDF_THUMBNAIL,
-                        caption=f"` تم تحويل ملفك 📗: {fileExt} إلى pdf`",
+                        caption=f"` تم تحويل ملفك 📗: {fileExt} إلى pdf \nConverted: {fileExt} to pdf`",
                         quote=True
                     )
                     await pdfMsgId.delete()
