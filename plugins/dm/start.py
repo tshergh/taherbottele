@@ -24,12 +24,10 @@ welcomeMsg = """مرحبا 𝓗𝓲 [{}](tg://user?id={})..!!🌝💛
 𝕋𝕙𝕚𝕤 𝕓𝕠𝕥 𝕨𝕚𝕝𝕝 𝕙𝕖𝕝𝕡 𝕪𝕠𝕦 𝕕𝕠 𝕒 𝕝𝕠𝕥 𝕠𝕗 𝕥𝕙𝕚𝕟𝕘𝕤 𝕨𝕚𝕥𝕙 𝕡𝕕𝕗 𝕗𝕚𝕝𝕖𝕤 
 بعض الميزات الرئيسية هي:
 ◍ `تحويل الصور إلى PDF`
-◍ `تحويل ملفات PDF إلى صور`
 ◍ `تحويل الملفات إلى pdf`
 ◍ `للمزيد من معلومات اضغط : استكشاف البوت`
 Some of the main features are:
 ◍ `Convert images to PDF`
-◍ `Convert PDF to images`
 ◍ `Convert files to pdf`
 ◍ `For more information, click: Explore Bot`
 
@@ -57,8 +55,7 @@ aboutDev = """🤖𝑨𝑩𝑶𝑼𝑻 𝑩𝑶𝑻 (حول البوت)
 Name(أسم): pdf pro | تعديل على pdf
 Username(معرف): @i2pdfbot
 Version(إلإصدار): 2.5
-Changelog(التغيير): Telegraph(تليغراف)
-
+Channel Bot: @i2pdfbotchannel 
 👤 Developer(المطور)
 Name(أسم ): 𝗧𝗔𝗛𝗘𝗥 𝗔𝗟𝗡𝗢𝗢𝗥𝗜
 Username(معرف): @ta_ja199 
@@ -125,7 +122,18 @@ Bot channel: @i2pdfbotchannel
 
 [feedback|اكتب تعليقًا📋](https://t.me/engineering_electrical9/719?comment=1)"""
 
+translatorBot2Edit = """
+ترجمة pdf translator  :
+لترجمة  pdf  أولا  أرسل  ملف pdf الى البوت هنا  
+سوف تظهر  لك ازار إضغط  على :
+ ✏️ totext الى نص✏️
+وبعدها اختار:
+html 🌐
+✏️ totext الى نص✏️>>html 🌐
+وبعدها افتح ملف واضغط  ترجمة وثم مشاركة  وبعدها  طباعة 
+اذا لم تفهم جيدا تابع الشرح أدناه 👇
 
+[feedback|اكتب تعليقًا📋](https://t.me/engineering_electrical9/719?comment=1)"""
 #--------------->
 #--------> config vars
 #------------------->
@@ -214,6 +222,12 @@ async def start(bot, message):
                     ],
                     [
                         InlineKeyboardButton(
+                            "📕ترجمة pdf | translator📙",
+                            callback_data = "translatorBot"
+                        )
+                    ],
+                    [
+                        InlineKeyboardButton(
                             "🚫 أغلق | CLOSE  🚫",
                             callback_data = "close"
                         )
@@ -235,6 +249,7 @@ async def start(bot, message):
 
 strtDevEdt = filters.create(lambda _, __, query: query.data == "strtDevEdt")
 exploreBot = filters.create(lambda _, __, query: query.data == "exploreBot")
+translatorBot= filters.create(lambda _, __, query: query.data == "translatorBot")
 refresh = filters.create(lambda _, __, query: query.data == "refresh")
 close = filters.create(lambda _, __, query: query.data == "close")
 back = filters.create(lambda _, __, query: query.data == "back")
@@ -309,7 +324,37 @@ async def _exploreBot(bot, callbackQuery):
         return
     except Exception as e:
         print(e)
-
+@ILovePDF.on_callback_query(translatorBot)
+async def _exploreBot(bot, callbackQuery):
+    try:
+        await callbackQuery.edit_message_text(
+            translatorBot2Edit,
+            reply_markup = InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            "الصفحة الرئيسية home 🏠  ",
+                            callback_data = "back"
+                        )
+                    ],
+                          [
+                        InlineKeyboardButton(
+                            "شرح كيفية  ترجمة pdf 🎥",
+                            url ="https://t.me/tlgrmcbot?start=i2pdfbot"
+                        )
+                    ],                  
+                        [
+                        InlineKeyboardButton(
+                            "🚫 أغلق | CLOSE  🚫",
+                            callback_data = "close"
+                        )
+                    ]
+                ]
+            )
+        )
+        return
+    except Exception as e:
+        print(e)
 
 @ILovePDF.on_callback_query(back)
 async def _back(bot, callbackQuery):
@@ -330,6 +375,12 @@ async def _back(bot, callbackQuery):
                         InlineKeyboardButton(
                             "📮Explore|استكشف📮",
                             callback_data = "exploreBot"
+                        )
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            "📕ترجمة pdf | translator📙",
+                            callback_data = "translatorBot"
                         )
                     ],
                     [
@@ -371,6 +422,12 @@ async def _refresh(bot, callbackQuery):
                         InlineKeyboardButton(
                             "📮Explore|استكشف📮",
                             callback_data = "exploreBot"
+                        )
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            "📕ترجمة pdf | translator📙",
+                            callback_data = "translatorBot"
                         )
                     ],
                     [
