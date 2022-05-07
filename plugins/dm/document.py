@@ -86,7 +86,7 @@ error: `{}`
 Dev&eng: @ta_ja199 👨‍💻"""
 
 
-feedbackMsg = "[🌟Rate:تقييم🌟](https://t.me/tlgrmcbot?start=i2pdfbot)"
+feedbackMsg = "[🌟Rate:تقييم🌟](https://telegramic.org/bot/i2pdfbot/)"
 
 
 forceSubMsg = """انتظر(Wait) [{}](tg://user?id={}) 🤚🏻..!!
