@@ -341,7 +341,7 @@ async def _translatorBot(bot, callbackQuery):
                           [
                         InlineKeyboardButton(
                             "شرح كيفية  ترجمة pdf 🎥",
-                            url ="https://youtube.com/shorts/BjcX76iOzPo?feature=share"
+                            url ="https://youtu.be/96n_OlK3PCk"
                         )
                     ],                  
                         [
