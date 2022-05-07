@@ -277,7 +277,7 @@ async def _strtDevEdt(bot, callbackQuery):
                           [
                         InlineKeyboardButton(
                             "🌟 Rate : تقييم 🌟",
-                            url ="https://t.me/tlgrmcbot?start=i2pdfbot"
+                            url ="https://telegramic.org/bot/i2pdfbot/"
                         )
                     ],                  
                         [
