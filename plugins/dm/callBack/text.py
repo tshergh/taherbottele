@@ -337,7 +337,7 @@ async def _H(bot, callbackQuery):
             reply_to_message_id = callbackQuery.message.reply_to_message.message_id,
             thumb = PDF_THUMBNAIL,
             document = f"{callbackQuery.message.message_id}/pdf.html",
-            caption = "__افتح هذا ملف للترجمة  او تابع شرح كيفية ترجمة\n [شرح كيفية  ترجمة  pdf 📔](https://youtube.com/shorts/BjcX76iOzPo?feature=share)__"
+            caption = "__افتح هذا ملف للترجمة  او تابع شرح كيفية ترجمة\n [شرح كيفية  ترجمة  pdf 📔](https://youtu.be/96n_OlK3PCk)__"
         )
         await downloadMessage.delete()
         PROCESS.remove(callbackQuery.message.chat.id)
