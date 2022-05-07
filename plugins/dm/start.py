@@ -133,7 +133,6 @@ html 🌐
 وبعدها افتح ملف واضغط  ترجمة وثم مشاركة  وبعدها  طباعة 
 اذا لم تفهم جيدا تابع الشرح أدناه 👇
 
-[شرح كيفية  ترجمة📔](https://youtube.com/shorts/BjcX76iOzPo?feature=share)
 
 [feedback|اكتب تعليقًا📋](https://t.me/engineering_electrical9/719?comment=1)"""
 #--------------->
@@ -327,7 +326,7 @@ async def _exploreBot(bot, callbackQuery):
     except Exception as e:
         print(e)
 @ILovePDF.on_callback_query(translatorBot)
-async def _exploreBot(bot, callbackQuery):
+async def _translatorBot(bot, callbackQuery):
     try:
         await callbackQuery.edit_message_text(
             translatorBot2Edit,
