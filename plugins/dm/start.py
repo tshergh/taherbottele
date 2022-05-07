@@ -133,6 +133,8 @@ html 🌐
 وبعدها افتح ملف واضغط  ترجمة وثم مشاركة  وبعدها  طباعة 
 اذا لم تفهم جيدا تابع الشرح أدناه 👇
 
+[شرح كيفية  ترجمة📔](https://youtube.com/shorts/BjcX76iOzPo?feature=share)
+
 [feedback|اكتب تعليقًا📋](https://t.me/engineering_electrical9/719?comment=1)"""
 #--------------->
 #--------> config vars
@@ -340,7 +342,7 @@ async def _exploreBot(bot, callbackQuery):
                           [
                         InlineKeyboardButton(
                             "شرح كيفية  ترجمة pdf 🎥",
-                            url ="https://t.me/tlgrmcbot?start=i2pdfbot"
+                            url ="https://youtube.com/shorts/BjcX76iOzPo?feature=share"
                         )
                     ],                  
                         [
