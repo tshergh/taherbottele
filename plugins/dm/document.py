@@ -272,7 +272,7 @@ async def documents(bot, message):
                 await message.download(
                     f"{message.message_id}/{isPdfOrImg}"
                 )
-                await pdfMsgId.edit("`جاري العمل .. قد يستغرق بعض الوقت .. 💛\n Work in Progress.. It might take some time.. `")
+                await pdfMsgId.edit("`جاري العمل .. قد يستغرق بعض الوقت .. 💛\nWork in Progress.. It might take some time.. `")
                 Document=fitz.open(
                     f"{message.message_id}/{isPdfOrImg}"
                 )
@@ -294,7 +294,7 @@ async def documents(bot, message):
                     file_name=f"{fileNm}.pdf",
                     document=open(f"{message.message_id}/{fileNm}.pdf", "rb"),
                     thumb=PDF_THUMBNAIL,
-                    caption=f"` تم تحويل ملفك 📗: {fileExt} إالى pdf`",
+                    caption=f"` تم تحويل ملفك: {fileExt} إالى pdf` \n`Converted: {fileExt} to pdf`",
                     quote=True
                 )
                 await pdfMsgId.delete()
@@ -332,7 +332,7 @@ async def documents(bot, message):
                     await message.download(
                         f"{message.message_id}/{isPdfOrImg}"
                     )
-                    await pdfMsgId.edit("`جاري العمل .. قد يستغرق بعض الوقت ..\n Work in Progress.. It might take some time.. `💛")
+                    await pdfMsgId.edit("`جاري العمل .. قد يستغرق بعض الوقت ..\nWork in Progress.. It might take some time.. `💛")
                     try:
                         convertapi.convert(
                             "pdf",
@@ -359,7 +359,7 @@ async def documents(bot, message):
                         file_name=f"{fileNm}.pdf",
                         document=open(f"{message.message_id}/{fileNm}.pdf", "rb"),
                         thumb=PDF_THUMBNAIL,
-                        caption=f"` تم تحويل ملفك 📗: {fileExt} إلى pdf \nConverted: {fileExt} to pdf`",
+                        caption=f"` تم تحويل ملفك: {fileExt} إلى pdf` \n`Converted: {fileExt} to pdf`",
                         quote=True
                     )
                     await pdfMsgId.delete()
