@@ -40,14 +40,14 @@ Some of the main features are:
 UCantUse = "لا يمكنك استخدام هذا الروبوت لبعض الأسباب 🛑"
 
 
-forceSubMsg = """انتظر(Wait) [{}](tg://user?id={}) 🤚🏻..!!
-يجيب اولاً انضمام للقناة البوت channel Bot لمتابعة كافة تحديثات البوت 📢 🚶
-هذا يعني أنك بحاجة إلى الانضمام إلى القناة المذكورة أدناه لاستخدامي😁😇!
-◍ `اضغط على " تحديث ♻️" بعد الانضمام .. 😅😇`
+forceSubMsg = """مرحبا [{}](tg://user?id={}) 🤚🏻..!!
+يجب عليك انضمام الى قناة لكي تستطيع استخدام البوت اشترك في هذه القناة  :👉👉 @i2pdfbotchannel
+وبعدها ارجع للبوت واضغط هذا الامر /start او من ازار اضغط تحديث
+لمتابعة كافة تحديثات البوت
 
-First he answers to join the bot channel to follow all bot updates 📢 🚶
-This means that you need to join the channel mentioned below to use me 😁😇!
-◍ `Click on “Refresh ♻️” after joining.. 😅😇`
+You must join a channel in order to use the bot. Subscribe to this channel: 👉👉 @i2pdfbotchannel
+Then go back to the bot and press this command / start, or from the buttons, press update
+To follow all bot updates`
 """
 foolRefresh = "يجيب عليك إشتراك أولا في قناة بعدها إضغط تحديث 😁 \n You must first subscribe to a channel, then click Refresh😁"
 
@@ -56,11 +56,14 @@ Name(أسم): pdf pro | تعديل على pdf
 Username(معرف): @i2pdfbot
 Version(إلإصدار): 2.5
 Channel Bot: @i2pdfbotchannel 
+
+
 👤 Developer(المطور)
 Name(أسم ): 𝗧𝗔𝗛𝗘𝗥 𝗔𝗟𝗡𝗢𝗢𝗥𝗜
 Username(معرف): @ta_ja199 
 Instagram(انستا)🎛:[Click here | إضغط  هنا](https://www.instagram.com/ta_9_ja/)
 Website(موقع)🌐:موسوعة المهندس الكهربائي
+Bot Extracte zip&rar(بوت استخراج zip&rar)🌐:unzipunrarprobot
 """
 
 
